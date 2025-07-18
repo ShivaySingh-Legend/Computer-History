@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>History of Computers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    iframe {
+      display: block;
+      margin: 10px 0;
+      max-width: 100%;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #result {
+      font-size: 18px;
+      font-weight: bold;
+      color: green;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>History of Computers</h1>
+
+  <div class="section">
+    <h2>Introduction</h2>
+    <p>The computer has evolved from a simple calculator to a powerful tool that runs modern life. Let’s explore its history through time.</p>
+  </div>
+
+  <div class="section">
+    <h2>Timeline</h2>
+    <ul>
+      <li><b>1801</b> – Punch cards used in Jacquard loom</li>
+      <li><b>1837</b> – Charles Babbage designs the Analytical Engine</li>
+      <li><b>1936</b> – Alan Turing introduces the concept of the Turing Machine</li>
+      <li><b>1945</b> – ENIAC becomes the first general-purpose computer</li>
+      <li><b>1971</b> – Intel 4004: The first microprocessor</li>
+      <li><b>1980s</b> – Personal computers rise (Apple, IBM)</li>
+      <li><b>2000s+</b> – AI, smartphones, and cloud computing shape the modern era</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Videos</h2>
+    <p>Watch these videos to learn more:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/O5nskjZ_GoI" title="History of Computers - YouTube" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZnXYK2c9x1A" title="Computer Evolution Documentary" allowfullscreen></iframe>
+  </div>
+
+  <div class="section">
+    <h2>Final Test: History of Computers</h2>
+    <form id="quizForm">
+
+      <div class="question">
+        <p>1. Who is known as the "Father of the Computer"?</p>
+        <label><input type="radio" name="q1" value="B"> Charles Babbage</label><br>
+        <label><input type="radio" name="q1" value="A"> Alan Turing</label><br>
+        <label><input type="radio" name="q1" value="C"> Steve Jobs</label><br>
+        <label><input type="radio" name="q1" value="D"> Bill Gates</label>
+      </div>
+
+      <div class="question">
+        <p>2. What was the purpose of the ENIAC?</p>
+        <label><input type="radio" name="q2" value="C"> Solving mathematical calculations</label><br>
+        <label><input type="radio" name="q2" value="A"> Playing games</label><br>
+        <label><input type="radio" name="q2" value="B"> Web browsing</label><br>
+        <label><input type="radio" name="q2" value="D"> Controlling satellites</label>
+      </div>
+
+      <div class="question">
+        <p>3. Which invention is considered the first microprocessor?</p>
+        <label><input type="radio" name="q3" value="B"> Intel 4004</label><br>
+        <label><input type="radio" name="q3" value="A"> Intel 8080</label><br>
+        <label><input type="radio" name="q3" value="C"> Zilog Z80</label><br>
+        <label><input type="radio" name="q3" value="D"> Apple M1</label>
+      </div>
+
+      <div class="question">
+        <p>4. The Turing Machine is a concept developed by:</p>
+        <label><input type="radio" name="q4" value="D"> Alan Turing</label><br>
+        <label><input type="radio" name="q4" value="A"> John von Neumann</label><br>
+        <label><input type="radio" name="q4" value="B"> Ada Lovelace</label><br>
+        <label><input type="radio" name="q4" value="C"> Charles Babbage</label>
+      </div>
+
+      <div class="question">
+        <p>5. What year was the first programmable computer (Z3) developed?</p>
+        <label><input type="radio" name="q5" value="B"> 1941</label><br>
+        <label><input type="radio" name="q5" value="A"> 1920</label><br>
+        <label><input type="radio" name="q5" value="C"> 1955</label><br>
+        <label><input type="radio" name="q5" value="D"> 1969</label>
+      </div>
+
+      <div class="question">
+        <p>6. The Jacquard loom used what for control?</p>
+        <label><input type="radio" name="q6" value="C"> Punch cards</label><br>
+        <label><input type="radio" name="q6" value="A"> Switches</label><br>
+        <label><input type="radio" name="q6" value="B"> Vacuum tubes</label><br>
+        <label><input type="radio" name="q6" value="D"> Magnetic disks</label>
+      </div>
+
+      <div class="question">
+        <p>7. Who was the first computer programmer?</p>
+        <label><input type="radio" name="q7" value="B"> Ada Lovelace</label><br>
+        <label><input type="radio" name="q7" value="A"> Grace Hopper</label><br>
+        <label><input type="radio" name="q7" value="C"> Alan Turing</label><br>
+        <label><input type="radio" name="q7" value="D"> Tim Berners-Lee</label>
+      </div>
+
+      <button type="button" onclick="gradeQuiz()">Submit</button>
+    </form>
+
+    <h3 id="result"></h3>
+
+    <script>
+      function gradeQuiz() {
+        const answers = {
+          q1: "B",
+          q2: "C",
+          q3: "B",
+          q4: "D",
+          q5: "B",
+          q6: "C",
+          q7: "B"
+        };
+
+        let score = 0;
+        for (let q in answers) {
+          const selected = document.querySelector(`input[name="${q}"]:checked`);
+          if (selected && selected.value === answers[q]) {
+            score++;
+          }
+        }
+
+        document.getElementById("result").innerHTML = `You scored ${score} out of 7.`;
+      }
+    </script>
+  </div>
+
+</body>
+</html>
